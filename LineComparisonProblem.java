@@ -61,12 +61,7 @@ public class LineComparisonProblem {
 
         double diff = length1.compareTo(length2); // java compareTo method used
 
-        if (diff < 0) {
-            System.out.println("length1 is less than length2 ");
-        } else if (diff == 0) {
-            System.out.println("length1 is equal to length2");
-        } else if (diff > 0) {
-            System.out.println("length1 is greater than length2");
-        }
+        LineEqualsCompare lineEqualsCompare = new LineEqualsCompare();
+        lineEqualsCompare.checkEqualsLine(diff);
     }
 }
